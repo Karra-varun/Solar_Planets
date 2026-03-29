@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos | Explore The Solar System</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #0b0d17; /* Dark space background */
+            color: #f8f9fa; /* Light text */
+        }
+        
+        .hero-section {
+            /* We use inline CSS here just to load the background image properly with a dark overlay */
+            background: linear-gradient(rgba(11, 13, 23, 0.7), rgba(11, 13, 23, 0.9)), 
+                        url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2000&auto=format&fit=crop') no-repeat center center;
+            background-size: cover;
+        }
+
+        /* Simple hover effect for our planet cards */
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 210, 255, 0.2) !important;
+            border-color: #0dcaf0 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info tracking-wider" href="#home">COSMOS.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#planets">Planets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section vh-100 d-flex align-items-center text-center">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold text-uppercase mb-4">Journey Through The Solar System</h1>
+                    <p class="lead mb-5 text-light">Discover the wonders of our cosmic neighborhood. From the scorching surface of Mercury to the icy winds of Neptune.</p>
+                    <a href="#planets" class="btn btn-info btn-lg px-4 rounded-pill fw-bold text-dark">Discover Planets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planets" class="py-5 bg-black">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-info">Our Planetary System</h2>
+                <p class="text-secondary">Explore the 8 major planets orbiting our Sun.</p>
+            </div>
+            
+            <div class="row g-4 text-center">
+                
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-dark text-light h-100 border-secondary hover-card p-3">
+                        <div class="display-4 mb-3">🌑</div>
+                        <h3 class="h4 card-title fw-bold">Mercury</h3>
+                        <p class="card-text text-secondary text-sm">The smallest and innermost planet, blistering hot and covered in craters.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-dark text-light h-100 border-secondary hover-card p-3">
+                        <div class="display-4 mb-3">🌕</div>
+                        <h3 class="h4 card-title fw-bold">Venus</h3>
+                        <p class="card-text text-secondary text-sm">A toxic, greenhouse-effect world with surface temperatures hot enough to melt lead.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-dark text-light h-100 border-secondary hover-card p-3">
+                        <div class="display-4 mb-3">🌍</div>
+                        <h3 class="h4 card-title fw-bold text-info">Earth</h3>
+                        <p class="card-text text-secondary text-sm">Our home. The only known planet in the universe to harbor life and liquid water.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-dark text-light h-100 border-secondary hover-card p-3">
+                        <div class="display-4 mb-3">🔴</div>
+                        <h3 class="h4 card-title fw-bold">Mars</h3>
+                        <p class="card-text text-secondary text-sm">The Red Planet, home to the largest volcano and deepest canyon in the solar system.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-dark text-light h-100 border-secondary hover-card p-3">
+                        <div class="display-4 mb-3">🪐</div>
+                        <h3 class="h4 card-title fw-bold">Jupiter</h3>
+                        <p class="card-text text-secondary text-sm">A massive gas giant, more than twice as massive as all other planets combined.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-dark text-light h-100 border-secondary hover-card p-3">
+                        <div class="display-4 mb-3">🪐</div>
+                        <h3 class="h4 card-title fw-bold">Saturn</h3>
+                        <p class="card-text text-secondary text-sm">Famous for its spectacular, complex ring system made of ice and rock.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-dark text-light h-100 border-secondary hover-card p-3">
+                        <div class="display-4 mb-3">❄️</div>
+                        <h3 class="h4 card-title fw-bold">Uranus</h3>
+                        <p class="card-text text-secondary text-sm">An ice giant that rotates on its side, featuring a pale blue-green atmosphere.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-dark text-light h-100 border-secondary hover-card p-3">
+                        <div class="display-4 mb-3">🔵</div>
+                        <h3 class="h4 card-title fw-bold">Neptune</h3>
+                        <p class="card-text text-secondary text-sm">The most distant planet, known for supersonic winds and deep blue color.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5" style="background-color: #0b0d17;">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1000&auto=format&fit=crop" class="img-fluid rounded shadow-lg" alt="The Milky Way Galaxy">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4 text-info">About Our Neighborhood</h2>
+                    <p class="lead text-secondary">The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud.</p>
+                    <p class="text-secondary mb-4">Our system is located in the Orion Arm, 26,000 light-years from the center of the Milky Way galaxy. Beyond the planets lie the asteroid belt, the Kuiper belt, and the Oort cloud, home to countless icy bodies and dwarf planets.</p>
+                    <a href="#contact" class="btn btn-outline-info rounded-pill px-4">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-dark">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-info">Join the Mission</h2>
+                    <p class="text-secondary">Subscribe to our newsletter for the latest cosmic discoveries.</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form class="bg-black p-4 p-md-5 rounded border border-secondary shadow">
+                        <div class="mb-3 text-start">
+                            <label for="name" class="form-label text-secondary">Astronaut Name</label>
+                            <input type="text" class="form-control bg-dark text-light border-secondary" id="name" required>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="email" class="form-label text-secondary">Communication Email</label>
+                            <input type="email" class="form-control bg-dark text-light border-secondary" id="email" required>
+                        </div>
+                        <div class="mb-4 text-start">
+                            <label for="message" class="form-label text-secondary">Transmission Details</label>
+                            <textarea class="form-control bg-dark text-light border-secondary" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info w-100 fw-bold text-dark rounded-pill py-2">Send Transmission</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-center py-4 border-top border-secondary">
+        <div class="container">
+            <h4 class="fw-bold text-info mb-3">COSMOS.</h4>
+            <div class="mb-3">
+                <a href="#home" class="text-secondary text-decoration-none mx-2">Home</a>
+                <a href="#planets" class="text-secondary text-decoration-none mx-2">Planets</a>
+                <a href="#about" class="text-secondary text-decoration-none mx-2">About</a>
+                <a href="#contact" class="text-secondary text-decoration-none mx-2">Contact</a>
+            </div>
+            <p class="text-muted small mb-0">&copy; 2026 Cosmos Project. Built with Bootstrap.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
